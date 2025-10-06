@@ -38,7 +38,7 @@ export default function Navbar() {
             </div>
         </nav>
         {isOpen && <div className={`${isOpen?'opacity-100':'opacity-0'} absolute inset-0 bg-black/45 transition-all duration-300`}  />}
-        <div className={`${isOpen ? 'translate-x-0' : 'translate-x-[150%]'} transition-all duration-300 fixed top-0 bottom-0 end-0 w-[300px] bg-white`}>
+        <div className={`${isOpen ? 'translate-x-0' : 'translate-x-[150%]'} transition-all duration-300 fixed top-0 bottom-0 end-0 w-[300px] bg-white dark:bg-bg text-text-one`}>
             <button onClick={() => setIsOpen(false)} className='absolute end-4 top-4 text-[22px]'>
                 <i className='bi bi-x-lg'></i>
             </button>
