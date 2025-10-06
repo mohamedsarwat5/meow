@@ -1,0 +1,42 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+
+:root {
+  --bg: #FCF9FC;
+  --purple: #8B4FD9;
+  --text-one: #2E2E2E;
+  --text-two: #364153;
+  --bg-footer: #2E2E2F;
+  --Fredoka:'Fredoka';
+}
+
+.dark {
+  --bg: #242322;
+  --text-one: #fff;
+  --text-two: #e5e7eb ;
+
+
+}
+.btn{
+  /* font-family: "Fredoka"; */
+}
+
+
+@theme {
+  --color-purple: var(--purple);
+  --color-text-one: var(--text-one);
+  --color-text-two: var(--text-two);
+  --color-bg: var(--bg);
+  --color-bg-footer: var(--bg-footer);
+  --font-Fredoka:var(--Fredoka);
+}
+
+.padding {
+  @apply p-4  md:px-[120px]
+}
+
+.active {
+  color: #8B4FD9;
+  font-weight: bold;
+}
