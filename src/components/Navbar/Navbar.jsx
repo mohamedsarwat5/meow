@@ -22,7 +22,7 @@ export default function Navbar() {
 
     return (<>
         <nav className={`bg-white dark:bg-[#313130] padding shadow-md flex justify-between items-center `}>
-            <Link to={'/'} className='w-40 block'>
+            <Link to={'/'} className='md:w-40 w-28 block'>
                 <img src={logo} className='dark:hidden' alt="" />
                 <img src={logoDark} className='dark:block hidden' alt="" />
             </Link>
