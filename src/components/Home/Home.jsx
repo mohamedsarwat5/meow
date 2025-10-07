@@ -22,9 +22,9 @@ export default function Home() {
                     <button className='shadow-xl cursor-pointer flex items-center text-[16px] gap-x-2 rounded-full bg-white dark:bg-[#313130] text-purple border-2 border-purple px-[32px] py-[16px]  btnn font-Fredoka font-semibold'><span>Donate Now</span></button>
                 </div>
                 <div className='flex items-center space-x-3 mt-7 text-center mx-auto md:mx-0'>
-                    <div className='flex flex-col '><span className='font-Fredoka font-bold text-purple md:text-[30px]'>50K+</span><span className='font-Quicksand text-base text-text-two whitespace-nowrap'>Happy Adopters</span></div>
-                    <div className='flex flex-col '><span className='font-Fredoka font-bold text-purple md:text-[30px]'>15K+</span><span className='font-Quicksand text-base text-text-two whitespace-nowrap'>Pets Adopted</span></div>
-                    <div className='flex flex-col '><span className='font-Fredoka font-bold text-purple md:text-[30px]'>200+</span><span className='font-Quicksand text-base text-text-two whitespace-nowrap'>Partner Shelters</span></div>
+                    <div className='flex flex-col '><span className='font-Fredoka font-bold text-purple md:text-[30px] text-[20px]'>50K+</span><span className='font-Quicksand text-base text-text-two whitespace-nowrap'>Happy Adopters</span></div>
+                    <div className='flex flex-col '><span className='font-Fredoka font-bold text-purple md:text-[30px] text-[20px]'>15K+</span><span className='font-Quicksand text-base text-text-two whitespace-nowrap'>Pets Adopted</span></div>
+                    <div className='flex flex-col '><span className='font-Fredoka font-bold text-purple md:text-[30px] text-[20px]'>200+</span><span className='font-Quicksand text-base text-text-two whitespace-nowrap'>Partner Shelters</span></div>
                 </div>
             </div>
             <div className='md:w-6/12'>
