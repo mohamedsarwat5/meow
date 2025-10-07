@@ -6,20 +6,25 @@
   --bg: #FCF9FC;
   --purple: #8B4FD9;
   --text-one: #2E2E2E;
-  --text-two: #364153;
+  --text-two: oklch(38.416% 0.02677 259.186);
   --bg-footer: #2E2E2F;
-  --Fredoka:'Fredoka';
+  --Fredoka: 'Fredoka';
+  --Quicksand: 'Quicksand';
 }
 
 .dark {
   --bg: #242322;
   --text-one: #fff;
-  --text-two: #e5e7eb ;
+  --text-two: #C8C6C4;
 
 
 }
-.btn{
-  /* font-family: "Fredoka"; */
+.btnn{
+  @apply transition-all duration-300 ease-in-out
+}
+
+.btnn:hover {
+  @apply scale-105
 }
 
 
@@ -29,14 +34,22 @@
   --color-text-two: var(--text-two);
   --color-bg: var(--bg);
   --color-bg-footer: var(--bg-footer);
-  --font-Fredoka:var(--Fredoka);
+  --font-Fredoka: var(--Fredoka);
+  --font-Quicksand: var(--Quicksand);
 }
 
 .padding {
-  @apply px-4 py-2 md:px-[120px]
+  @apply px-4 py-4 md:px-[120px]
+}
+.p{
+  @apply px-4 py-12  md:px-[120px]
 }
 
 .active {
   color: #8B4FD9;
   font-weight: bold;
+}
+
+.card{
+  @apply border-[20px] border-white dark:border-[#313130] rounded-4xl overflow-hidden h-[400px] shadow-md
 }
