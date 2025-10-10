@@ -50,6 +50,14 @@
   font-weight: bold;
 }
 
+a{
+  transition: all .3s;
+}
+
+a:hover{
+  color: #8B4FD9;
+}
+
 .card{
   @apply border-[20px] border-white dark:border-[#2e2e2e] rounded-4xl overflow-hidden h-[400px] shadow-md
 }
