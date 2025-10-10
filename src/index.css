@@ -13,7 +13,7 @@
 }
 
 .dark {
-  --bg: #242322;
+  --bg: #1b1b1b;
   --text-one: #fff;
   --text-two: #C8C6C4;
 
@@ -51,5 +51,5 @@
 }
 
 .card{
-  @apply border-[20px] border-white dark:border-[#313130] rounded-4xl overflow-hidden h-[400px] shadow-md
+  @apply border-[20px] border-white dark:border-[#2e2e2e] rounded-4xl overflow-hidden h-[400px] shadow-md
 }

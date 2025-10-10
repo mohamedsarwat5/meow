@@ -4,6 +4,7 @@ import dog1 from '../../assets/dog1.jpg'
 import dog2 from '../../assets/dog2.jpg'
 import cat1 from '../../assets/cat1.jpg'
 import cat2 from '../../assets/cat2.jpg'
+import Features from '../Features/Features'
 
 export default function Home() {
 
@@ -11,7 +12,7 @@ export default function Home() {
     const [first, setFirst] = useState(false)
 
 
-    return (
+    return (<>
         <div className='p min-h-screen flex md:flex-row flex-col gap-y-4 md:gap-y-0 items-center justify-between bg-bg transition-colors duration-300'>
             <div className='md:w-5/12 md:-translate-y-5 flex flex-col gap-y-6 md:gap-y-0 transition-colors duration-300 text-center md:text-left  '>
                 <p className='font-Quicksand whitespace-nowrap text-purple w-fit md:text-[24px] text-[18px] flex items-center md:mb-[24px] font-semibold bg-purple-400/15 dark:bg-white/15 p-4 rounded-full mx-auto md:mx-0'> <i className="bi bi-globe-americas text-sm me-1 text-text-one  "></i>Trusted by 50,000+ pet lovers</p>
@@ -38,5 +39,6 @@ export default function Home() {
 
             </div>
         </div>
-    )
+        <Features/>
+   </> )
 }

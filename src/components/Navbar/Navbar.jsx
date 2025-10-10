@@ -15,13 +15,13 @@ export default function Navbar() {
         document.documentElement.classList.toggle('dark')
         setdark(prev => !prev)
     }
- 
+
     const handleopen = () => {
         setIsOpen(prev => !prev)
     }
 
     return (<>
-        <nav className={`bg-white dark:bg-[#313130] transition-colors duration-300 padding shadow-md flex justify-between items-center fixed top-0 w-full `}>
+        <nav className={`bg-white dark:bg-[#141414] transition-colors duration-300 padding shadow-md flex justify-between items-center fixed top-0 w-full  z-50`}>
             <Link to={'/'} className='md:w-40 w-28 block'>
                 <img src={logo} className='dark:hidden' alt="" />
                 <img src={logoDark} className='dark:block hidden' alt="" />
@@ -37,8 +37,8 @@ export default function Navbar() {
                 <button onClick={handleopen} className='md:hidden'><i className="bi bi-list text-3xl"></i></button>
             </div>
         </nav>
-        {isOpen && <div onClick={() => setIsOpen(false)} className={`${isOpen ? 'opacity-100' : 'opacity-0'} fixed inset-0  bg-black/45 transition-all duration-300`} />}
-        <div className={`${isOpen ? 'translate-x-0' : 'translate-x-[150%]'} transition-all duration-300 fixed top-0 bottom-0 end-0 w-[300px] bg-white dark:bg-bg text-text-one`}>
+        {isOpen && <div onClick={() => setIsOpen(false)} className={`${isOpen ? 'opacity-100' : 'opacity-0'} fixed inset-0  bg-black/45 transition-all duration-300 z-[999]`} />}
+        <div className={`${isOpen ? 'translate-x-0' : 'translate-x-[150%]'} z-[999999] transition-all duration-300 fixed top-0 bottom-0 end-0 w-[300px] bg-white dark:bg-bg text-text-one`}>
             <button onClick={() => setIsOpen(false)} className='absolute end-4 top-4 text-[22px]'>
                 <i className='bi bi-x-lg'></i>
             </button>
